@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/bg_vefu1"
+    android:layout_height="match_parent"
+    tools:context=".MitraActivity">
+
+    <ScrollView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:background="@color/bg_vefu1"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"/>
+            <!--UPDATE BARANG-->
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="-100dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/header2"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:padding="15dp"
+                    android:id="@+id/photoProfile"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:cropToPadding="true"
+                    android:src="@drawable/ic_list" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+
+                <EditText
+                    android:id="@+id/txt_path"
+                    android:hint="Enter a Name Files"
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:visibility="gone"
+                    android:enabled="false"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/font_vefu"
+                        android:text="List barang"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:onClick="pindah"
+                        android:fontFamily="@font/twcenmt"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/header2"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:padding="15dp"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:cropToPadding="true"
+                        android:src="@drawable/ic_transaksi"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+
+
+                    <EditText
+                        android:hint="Enter a Name Files"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:visibility="gone"
+                        android:enabled="false"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+
+                        <RelativeLayout
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent" />
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/font_vefu"
+                            android:text="transaksi"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/twcenmt"/>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--MENU_ALL-->
+
+
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center|bottom"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+
+        <Button
+            android:textSize="20dp"
+            android:layout_gravity="center|bottom"
+            android:backgroundTint="@color/font_vefu"
+            android:textAllCaps="false"
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:onClick="logout"
+            android:text="Logout"
+            android:textColor="@color/White"
+            android:layout_alignParentBottom="true" />
+
+    </LinearLayout>
+</RelativeLayout>

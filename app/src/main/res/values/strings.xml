@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Sayur</string>
+    <string-array name="spinneritem1">
+        <item>
+            Sayur
+        </item>
+        <item>
+            Buah
+        </item>
+        <item>
+            Daging
+        </item>
+        <item>
+            Lainnya
+        </item>
+    </string-array>
+    <string-array name="spinneritem2">
+        <item>
+            Sedang di Proses
+        </item>
+        <item>
+            Dalam pengiriman
+        </item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_vefu1"
+    tools:context=".ListBarangMitraActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eeeeee"
+        android:orientation="vertical"
+        >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rc_list_request"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:clipToPadding="false"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center|bottom"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:backgroundTint="@color/font_vefu"
+            android:textAllCaps="false"
+            android:layout_gravity="center|bottom"
+            android:layout_alignParentBottom="true"
+            android:textSize="20dp"
+            android:id="@+id/fab_add"
+            android:layout_width="170dp"
+            android:layout_height="55dp"
+            android:textColor="#fff"
+            android:onClick="klik"
+            android:text="Tambah Barang"/>
+
+
+    </LinearLayout>
+</RelativeLayout>

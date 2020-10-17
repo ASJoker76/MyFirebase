@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ManajemenBarangActivity"
+    android:background="@color/bg_vefu1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masukan Barang"
+        android:textColor="@color/font_vefu"
+        android:textSize="12pt"/>
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_marginTop="10dp"
+        android:hint="Nama"
+        android:backgroundTint="@android:color/transparent"
+        android:textColorHint="@color/Black"
+        android:textColor="@color/Black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="30dp"
+        android:background="@color/font_vefu"/>
+
+    <EditText
+        android:id="@+id/et_harga"
+        android:layout_marginTop="10dp"
+        android:hint="Harga"
+        android:inputType="number"
+        android:backgroundTint="@android:color/transparent"
+        android:textColor="@color/Black"
+        android:textColorHint="@color/Black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="30dp"
+        android:background="@color/font_vefu"/>
+
+    <EditText
+        android:id="@+id/et_stok"
+        android:layout_marginTop="10dp"
+        android:hint="Stok"
+        android:inputType="number"
+        android:backgroundTint="@android:color/transparent"
+        android:textColor="@color/Black"
+        android:textColorHint="@color/Black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="30dp"
+        android:background="@color/font_vefu"/>
+            <EditText
+                android:id="@+id/txt_path"
+                android:layout_marginTop="10dp"
+                android:hint="Url"
+                android:inputType="text"
+                android:enabled="false"
+                android:visibility="gone"
+                android:backgroundTint="@android:color/transparent"
+                android:textColor="@color/Black"
+                android:textColorHint="@color/Black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/et_url"
+                android:layout_marginTop="10dp"
+                android:hint="Url"
+                android:inputType="text"
+                android:enabled="false"
+                android:visibility="gone"
+                android:backgroundTint="@android:color/transparent"
+                android:textColor="@color/Black"
+                android:textColorHint="@color/Black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <Button
+        android:id="@+id/button_choose_image"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:background="@color/font_vefu"
+        android:text="Pilih Gambar"
+        android:textColor="@android:color/white"
+        android:onClick="ambilgambar"
+        android:layout_gravity="center"/>
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:layout_gravity="center"
+        android:src="@drawable/sayuran"
+        />
+            <ImageView
+                android:id="@+id/image_view2"
+                android:layout_width="320dp"
+                android:layout_height="320dp"
+                android:layout_gravity="center"
+                android:src="@drawable/sayuran"
+                android:visibility="gone"
+                />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:backgroundTint="@color/font_vefu"
+            android:id="@+id/btn_save"
+            android:textAllCaps="false"
+            android:layout_marginTop="16dp"
+            android:text="Save"
+            android:textColor="@color/white"
+            android:layout_width="179dp"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"/>
+
+        <RelativeLayout
+            android:layout_width="20dp"
+            android:layout_height="match_parent"/>
+        <Button
+            android:id="@+id/btn_cancel"
+            android:textAllCaps="false"
+            android:layout_marginTop="16dp"
+            android:text="Cancel"
+            android:layout_width="179dp"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:backgroundTint="@color/font_vefu"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

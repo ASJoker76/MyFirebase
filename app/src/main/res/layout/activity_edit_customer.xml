@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/bg_vefu1"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:padding="30dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:text="Profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/font_vefu"
+            android:fontFamily="@font/twcenmt"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:src="@drawable/ic_account"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/imageprofile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="gantifoto">
+
+            </ImageView>
+
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/imageprofile"
+                android:layout_marginTop="20dp"
+                android:textColor="#fff"
+                android:text="nama"
+                android:textSize="20dp"
+                android:id="@+id/txt_username"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/twcenmt">
+
+            </TextView>
+
+        </RelativeLayout>
+
+        <EditText
+            android:padding="5dp"
+            android:id="@+id/txt_url"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF"
+            android:hint="Full Name"
+            android:inputType="textImeMultiLine"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            android:fontFamily="@font/twcenmt"
+            android:visibility="gone"/>
+
+        <TextView
+            android:textColor="#fff"
+            android:text="Full Name"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/twcenmt"/>
+
+        <EditText
+            android:padding="5dp"
+            android:id="@+id/txt_nama"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF"
+            android:hint="Full Name"
+            android:inputType="textImeMultiLine"
+            android:textColor="@color/font_vefu"
+            android:textColorHint="@color/font_vefu"
+            android:textSize="15dp"
+            android:fontFamily="@font/twcenmt"/>
+
+        <TextView
+            android:textColor="#fff"
+            android:text="Email"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/twcenmt"/>
+
+
+
+        <EditText
+            android:padding="5dp"
+            android:id="@+id/txt_email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF"
+            android:hint="Email"
+            android:inputType="textImeMultiLine"
+            android:textColor="@color/font_vefu"
+            android:textColorHint="@color/font_vefu"
+            android:textSize="15dp"
+            android:fontFamily="@font/twcenmt"/>
+
+
+        <TextView
+            android:textColor="#fff"
+            android:text="Alamat"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/twcenmt"/>
+
+
+
+        <EditText
+            android:padding="5dp"
+            android:id="@+id/txt_alamat"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF"
+            android:hint="Alamat"
+            android:inputType="textImeMultiLine"
+            android:textColor="@color/font_vefu"
+            android:textColorHint="@color/font_vefu"
+            android:textSize="15dp"
+            android:fontFamily="@font/twcenmt"/>
+        <TextView
+            android:textColor="#fff"
+            android:text="Telepon"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/twcenmt">
+
+        </TextView>
+        <EditText
+            android:padding="5dp"
+            android:id="@+id/txt_phone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF"
+            android:hint="Telepon"
+            android:inputType="textImeMultiLine"
+            android:textColor="@color/font_vefu"
+            android:textColorHint="@color/font_vefu"
+            android:textSize="15dp"
+            android:fontFamily="@font/twcenmt"/>
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/font_vefu"
+            android:layout_marginTop="30dp"
+            android:onClick="update"
+            android:text="Update"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:fontFamily="@font/twcenmt"/>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

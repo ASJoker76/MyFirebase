@@ -1,0 +1,166 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_vefu1"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <LinearLayout
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/sayuran"
+                android:id="@+id/txt_url"
+                android:layout_weight="2.5"
+                android:layout_width="match_parent"
+                android:layout_height="90dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="6dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:background="@drawable/header2"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_id_wish"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="16dp"
+                    android:layout_toRightOf="@+id/rp"
+                    android:text="10000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/Black"
+                    android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/txt_nama"
+                android:layout_marginLeft="4dp"
+                android:textSize="16dp"
+                android:text="Apel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Black" />
+                <TextView
+
+                    android:id="@+id/rp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="16dp"
+                    android:layout_toRightOf="@+id/txt_nama"
+                    android:text="Rp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/Black" />
+                <TextView
+                    android:id="@+id/txt_harga"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="16dp"
+                    android:layout_toRightOf="@+id/rp"
+                    android:text="10000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/Black" />
+
+            <Button
+                android:id="@+id/btnminus"
+                android:textColor="@color/Black"
+                android:textSize="14dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:enabled="false"
+                android:inputType="number"
+                android:text="-"
+                android:onClick="minus" />
+
+            <EditText
+                android:id="@+id/txt_stok"
+                android:textColor="@color/Black"
+                android:backgroundTint="@android:color/transparent"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:layout_marginTop="25dp"
+                android:layout_toRightOf="@+id/btnminus"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:enabled="false"
+                android:inputType="number"
+                android:text="5000" />
+
+            <Button
+                android:id="@+id/btnplus"
+                android:textColor="@color/Black"
+                android:textSize="14dp"
+                android:layout_toRightOf="@+id/txt_stok"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:enabled="false"
+                android:inputType="number"
+                android:text="+"
+                android:onClick="plus" />
+
+                <Button
+                    android:id="@+id/btn_delete"
+                    android:textColor="@color/Black"
+                    android:textSize="14dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_toRightOf="@+id/btnplus"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:enabled="false"
+                    android:inputType="number"
+                    android:background="@drawable/ic_delete"
+                    android:onClick="plus" />
+
+
+                <TextView
+                    android:id="@+id/txt_rupiah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70dp"
+                    android:text="Total Harga     Rp "
+                    android:textColor="@color/Black"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:textColor="@color/Black"
+                    android:id="@+id/txt_total"
+                    android:text="5.000.000"
+                    android:textSize="16dp"
+                    android:layout_marginTop="70dp"
+                    android:layout_toRightOf="@+id/txt_rupiah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
